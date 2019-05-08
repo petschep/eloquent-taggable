@@ -20,7 +20,7 @@ class Tag extends Model
     /**
      * @inheritdoc
      */
-    protected $primaryKey = 'tag_id';
+    protected $primaryKey = 'id';
 
     /**
      * @inheritdoc
