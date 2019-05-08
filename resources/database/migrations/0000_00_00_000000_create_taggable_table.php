@@ -19,7 +19,7 @@ class CreateTaggableTable extends Migration
 
         if (!Schema::connection($connection)->hasTable('taggable_tags')) {
             Schema::connection($connection)->create('taggable_tags', function(Blueprint $table) {
-                $table->increments('tag_id');
+                $table->uuid('id')->unique();
                 $table->string('name');
                 $table->string('normalized');
                 $table->timestamps();
@@ -30,8 +30,8 @@ class CreateTaggableTable extends Migration
 
         if (!Schema::connection($connection)->hasTable('taggable_taggables')) {
             Schema::connection($connection)->create('taggable_taggables', function(Blueprint $table) {
-                $table->unsignedInteger('tag_id');
-                $table->unsignedInteger('taggable_id');
+                $table->uuid('tag_id');
+                $table->uuid('taggable_id');
                 $table->string('taggable_type');
                 $table->timestamps();
 

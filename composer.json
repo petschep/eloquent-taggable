@@ -1,5 +1,5 @@
 {
-    "name": "petschep/eloquent-taggable",
+    "name": "cviebrock/eloquent-taggable",
     "description": "Easy ability to tag your Eloquent models in Laravel 5.",
     "keywords": [
         "laravel",
@@ -8,10 +8,10 @@
         "tagging",
         "taggable"
     ],
-    "homepage": "https://github.com/petschep/eloquent-taggable",
+    "homepage": "https://github.com/cviebrock/eloquent-taggable",
     "support": {
-        "issues": "https://github.com/petschep/eloquent-taggable/issues",
-        "source": "https://github.com/petschep/eloquent-taggable"
+        "issues": "https://github.com/cviebrock/eloquent-taggable/issues",
+        "source": "https://github.com/cviebrock/eloquent-taggable"
     },
     "license": "MIT",
     "authors": [
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "petschep\\EloquentTaggable\\": "src"
+            "Cviebrock\\EloquentTaggable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "petschep\\EloquentTaggable\\Test\\": "tests"
+            "Cviebrock\\EloquentTaggable\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "petschep\\EloquentTaggable\\ServiceProvider"
+                "Cviebrock\\EloquentTaggable\\ServiceProvider"
             ]
         }
     },
